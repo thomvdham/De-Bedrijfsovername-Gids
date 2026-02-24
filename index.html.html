@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Bedrijfsovername Gids | Corporate Finance Nederland</title>
+    <meta name="description" content="Dé kennisbron over corporate finance in Nederland. Leer alles over bedrijfsverkoop, overnames, waarderingsmethoden, EBITDA multiples en financieringsvormen. Gratis en onafhankelijk.">
+    <meta name="keywords" content="corporate finance nederland, bedrijfsovername gids, bedrijfsverkoop, waardering bedrijf, EBITDA multiples nederland, M&A nederland, fusies en overnames">
+    <link rel="canonical" href="https://www.debedrijfsovernamegids.nl/">
+    <meta property="og:title" content="De Bedrijfsovername Gids | Corporate Finance Nederland">
+    <meta property="og:description" content="Alles over bedrijfsverkoop, overnames, waarderingen en financiering in Nederland.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="nl_NL">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"De Bedrijfsovername Gids","url":"https://www.debedrijfsovernamegids.nl","description":"Onafhankelijk kennisplatform over corporate finance en bedrijfsovernames in Nederland.","inLanguage":"nl"}</script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav id="navbar" class="transparent">
+    <a href="index.html" class="nav-logo">De Bedrijfsovername <span>Gids</span></a>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="bedrijfsverkoop.html">Bedrijfsverkoop</a></li>
+        <li><a href="overname.html">Overname</a></li>
+        <li><a href="waardering.html">Waardering</a></li>
+        <li><a href="financiering.html">Financiering</a></li>
+        <li><a href="multiples.html">Multiples</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="javascript:void(0)" class="nav-cta-btn" onclick="openModal()">Terugbelverzoek</a></li>
+    </ul>
+    <button class="mobile-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<button class="sticky-cta" id="stickyCta" onclick="openModal()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Gratis Terugbelverzoek
+</button>
+
+<div class="modal-overlay" id="modalOverlay" onclick="if(event.target===this)closeModal()">
+    <div class="modal">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <div id="formContainer">
+            <div class="modal-label">Vrijblijvend & Vertrouwelijk</div>
+            <h2>Spreek een adviseur</h2>
+            <p>Laat uw gegevens achter en een ervaren corporate finance adviseur bij u in de buurt neemt binnen 24 uur contact met u op.</p>
+            <form id="contactForm" onsubmit="submitForm(event)">
+                <div class="form-row"><div class="form-group"><label for="naam">Naam *</label><input type="text" id="naam" placeholder="Uw volledige naam" required></div><div class="form-group"><label for="bedrijf">Bedrijfsnaam</label><input type="text" id="bedrijf" placeholder="Naam van uw bedrijf"></div></div>
+                <div class="form-row"><div class="form-group"><label for="email">E-mailadres *</label><input type="email" id="email" placeholder="uw@email.nl" required></div><div class="form-group"><label for="telefoon">Telefoonnummer *</label><input type="tel" id="telefoon" placeholder="+31 6 1234 5678" required></div></div>
+                <div class="form-group"><label for="onderwerp">Waar gaat uw vraag over?</label><select id="onderwerp"><option value="">Selecteer...</option><option value="verkoop">Bedrijf verkopen</option><option value="overname">Bedrijf overnemen</option><option value="waardering">Bedrijfswaardering</option><option value="financiering">Financiering</option><option value="advies">Strategisch advies</option><option value="anders">Anders</option></select></div>
+                <div class="form-group"><label for="toelichting">Korte toelichting</label><textarea id="toelichting" placeholder="Vertel kort waar u mee geholpen wilt worden..."></textarea></div>
+                <button type="submit" class="form-submit">Terugbelverzoek Versturen &rarr;</button>
+            </form>
+            <p class="form-privacy">Uw gegevens worden vertrouwelijk behandeld en uitsluitend gebruikt om u in contact te brengen met een geschikte adviseur.</p>
+        </div>
+        <div class="form-success" id="formSuccess">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="28" fill="#0a1628"/><path d="M18 28l7 7 13-13" stroke="#c9a84c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Bedankt voor uw aanvraag</h3>
+            <p>Een corporate finance adviseur neemt binnen 24 uur contact met u op.</p>
+        </div>
+    </div>
+</div>
+
+<header class="home-hero">
+    <div class="hero-bg"></div>
+    <div class="hero-pattern"></div>
+    <div class="hero-content">
+        <div class="hero-badge">Onafhankelijk Kennisplatform</div>
+        <h1>De Bedrijfsovername <em>Gids</em></h1>
+        <p class="hero-sub">Alles wat u moet weten over bedrijfsovernames, waarderingen en financiering in Nederland. Onafhankelijk, helder en gratis toegankelijk.</p>
+        <div class="hero-cards">
+            <a href="bedrijfsverkoop.html" class="hero-card">
+                <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <h3>Bedrijfsverkoop</h3>
+                <p>Het volledige sell-side proces in 5 stappen — van voorbereiding tot closing.</p>
+                <span class="card-arrow">Lees meer →</span>
+            </a>
+            <a href="overname.html" class="hero-card">
+                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                <h3>Bedrijfsovername</h3>
+                <p>Van acquisitiestrategie tot integratie — het buy-side proces uitgelegd.</p>
+                <span class="card-arrow">Lees meer →</span>
+            </a>
+            <a href="waardering.html" class="hero-card">
+                <svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                <h3>Waarderingsmethoden</h3>
+                <p>DCF, multiples, vergelijkbare transacties — alle methoden helder uitgelegd.</p>
+                <span class="card-arrow">Lees meer →</span>
+            </a>
+            <a href="financiering.html" class="hero-card">
+                <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                <h3>Financiering</h3>
+                <p>Bankfinanciering, mezzanine, vendor loans en LBO-structuren.</p>
+                <span class="card-arrow">Lees meer →</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- Quick intro section -->
+<section class="content-light">
+    <div class="section-inner" style="text-align:center;max-width:780px">
+        <div class="section-label" style="justify-content:center">Waarom deze gids?</div>
+        <h2 class="section-title">Onafhankelijke informatie voor ondernemers en bestuurders</h2>
+        <p class="section-intro" style="max-width:100%;margin-left:auto;margin-right:auto">Of u nu overweegt uw bedrijf te verkopen, een overname wilt doen, of simpelweg wilt begrijpen hoe corporate finance werkt — deze gids biedt u alle kennis die u nodig heeft. Geschreven in begrijpelijk Nederlands, zonder jargon waar het niet nodig is.</p>
+        <div class="inline-cta reveal" style="margin-top:2rem">
+            <div class="inline-cta-text"><h3>Direct met een adviseur spreken?</h3><p>Wij brengen u gratis in contact met een ervaren corporate finance adviseur bij u in de buurt.</p></div>
+            <button class="inline-cta-btn" onclick="openModal()">Terugbelverzoek</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-top">
+            <div class="footer-brand"><a href="index.html" class="nav-logo">De Bedrijfsovername <span>Gids</span></a><p>Onafhankelijk kennisplatform over corporate finance en bedrijfsovernames in Nederland.</p></div>
+            <div class="footer-col"><h5>Kennisbank</h5><a href="bedrijfsverkoop.html">Bedrijfsverkoop</a><a href="overname.html">Bedrijfsovername</a><a href="waardering.html">Waarderingsmethoden</a><a href="financiering.html">Financieringsvormen</a><a href="multiples.html">EBITDA Multiples</a></div>
+            <div class="footer-col"><h5>Onderwerpen</h5><a href="waardering.html">DCF Waardering</a><a href="financiering.html">Leveraged Buyout</a><a href="bedrijfsverkoop.html">Informatiememorandum</a><a href="overname.html">Due Diligence</a><a href="faq.html">Veelgestelde Vragen</a></div>
+            <div class="footer-col"><h5>Contact</h5><a href="javascript:void(0)" onclick="openModal()">Terugbelverzoek</a><a href="mailto:info@debedrijfsovernamegids.nl">E-mail</a><a href="#">LinkedIn</a></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2025 De Bedrijfsovername Gids. Alle rechten voorbehouden.</p><div class="footer-bottom-links"><a href="#">Privacybeleid</a><a href="#">Cookiebeleid</a><a href="#">Disclaimer</a></div></div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
